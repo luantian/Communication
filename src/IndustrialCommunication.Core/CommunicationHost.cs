@@ -143,21 +143,31 @@ public sealed class CommunicationHost : IAsyncDisposable, IDisposable
 
     public async ValueTask DisposeAsync()
     {
+        // Stop the monitor BEFORE marking this host disposed: the monitor loop drains with
+        // GetClient calls that must still observe a live host (the loop additionally tolerates
+        // ObjectDisposedException for the residual window).
         ConnectionMonitor? monitor;
-        List<IPlcClient> toDispose;
         lock (_gate)
         {
-            ObjectDisposedException.ThrowIf(_disposed, this);
-            _disposed = true;
+            if (_disposed)
+                return;
             monitor = _monitor;
             _monitor = null;
-            toDispose = [.. _created];
-            _created.Clear();
-            _clients.Clear();
         }
 
         if (monitor is not null)
             await monitor.DisposeAsync().ConfigureAwait(false);
+
+        List<IPlcClient> toDispose;
+        lock (_gate)
+        {
+            if (_disposed)
+                return;
+            _disposed = true;
+            toDispose = [.. _created];
+            _created.Clear();
+            _clients.Clear();
+        }
 
         foreach (var client in toDispose)
             await client.DisposeAsync().ConfigureAwait(false);

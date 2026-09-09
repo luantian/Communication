@@ -70,6 +70,11 @@ internal sealed partial class ConnectionMonitor : IAsyncDisposable
                     LogNoClient(name, ex.Message);
                     continue;
                 }
+                catch (ObjectDisposedException)
+                {
+                    // The host is being disposed while this loop drains — stop quietly.
+                    return;
+                }
 
                 try
                 {

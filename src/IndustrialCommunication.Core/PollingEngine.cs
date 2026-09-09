@@ -139,6 +139,11 @@ public sealed partial class PollingEngine : IAsyncDisposable, IDisposable
             {
                 break;
             }
+            catch (ObjectDisposedException)
+            {
+                // The host was disposed mid-cycle — nothing left to poll.
+                break;
+            }
             catch (Exception ex)
             {
                 // A poll loop must never die — log and keep cycling.
