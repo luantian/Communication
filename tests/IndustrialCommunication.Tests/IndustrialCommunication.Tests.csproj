@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <Description>Unit tests for IndustrialCommunication: address parsers, frame builders, value codec, configuration loading.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Modbus\IndustrialCommunication.Drivers.Modbus.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Siemens\IndustrialCommunication.Drivers.Siemens.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Mitsubishi\IndustrialCommunication.Drivers.Mitsubishi.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Omron\IndustrialCommunication.Drivers.Omron.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Keyence\IndustrialCommunication.Drivers.Keyence.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Rockwell\IndustrialCommunication.Drivers.Rockwell.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Panasonic\IndustrialCommunication.Drivers.Panasonic.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.GeSrtp\IndustrialCommunication.Drivers.GeSrtp.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.LsFEnet\IndustrialCommunication.Drivers.LsFEnet.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.OpcUa\IndustrialCommunication.Drivers.OpcUa.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.DependencyInjection\IndustrialCommunication.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Mqtt\IndustrialCommunication.Mqtt.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.8" />
+  </ItemGroup>
+
+</Project>

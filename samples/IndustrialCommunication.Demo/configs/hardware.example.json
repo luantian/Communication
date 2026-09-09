@@ -1,0 +1,109 @@
+{
+  // Template for real hardware. Copy, adjust, set "enabled": true for the devices you have.
+  // Wire it into the demo by pointing CommunicationHost.Load at this file.
+  "defaults": {
+    "timeoutMs": 3000,
+    "connectTimeoutMs": 5000,
+    "connectRetries": 2,
+    "retryIntervalMs": 2000,
+    "autoReconnect": true
+  },
+  "devices": [
+    {
+      "name": "s7-main",
+      "protocol": "S7",
+      "enabled": false,
+      "description": "Siemens S7-1200; slot 0 for 1200/1500, slot 2 for 300/400",
+      "connection": { "ip": "192.168.1.10", "port": 102, "cpuType": "S71200", "rack": 0, "slot": 0 }
+    },
+    {
+      "name": "inverter",
+      "protocol": "ModbusTcp",
+      "enabled": false,
+      "description": "Modbus TCP device (drive, meter, gateway ...); CDAB is common for drives",
+      "connection": { "ip": "192.168.1.20", "port": 502, "unitId": 1, "dataLayout": "ABCD" }
+    },
+    {
+      "name": "rtu-scale",
+      "protocol": "ModbusRtu",
+      "enabled": false,
+      "description": "RS485 bus via COM3",
+      "connection": {
+        "portName": "COM3",
+        "baudRate": 9600,
+        "dataBits": 8,
+        "parity": "None",
+        "stopBits": "One",
+        "unitId": 2,
+        "requestGapMs": 5
+      }
+    },
+    {
+      "name": "mc-q06",
+      "protocol": "MitsubishiMc",
+      "enabled": false,
+      "description": "Mitsubishi Q/L series via Ethernet module (MC 4E)",
+      "connection": { "ip": "192.168.1.30", "port": 5007, "frame": "4E", "stationNo": 255, "monitorTimerMs": 3000 }
+    },
+    {
+      "name": "fins-nj",
+      "protocol": "OmronFins",
+      "enabled": false,
+      "description": "Omron CJ/NJ; destNode defaults to the PLC IP's last byte",
+      "connection": { "ip": "192.168.1.40", "port": 9600, "sourceNode": 25 }
+    },
+    {
+      "name": "fp0r",
+      "protocol": "PanasonicMewtocol",
+      "enabled": false,
+      "description": "Panasonic FP series over a communication unit (MEWTOCOL TCP)",
+      "connection": { "ip": "192.168.1.50", "port": 9094, "station": 1 }
+    },
+    {
+      "name": "kv-8000",
+      "protocol": "KeyenceUpperLink",
+      "enabled": false,
+      "description": "Keyence KV series upper link; 8501 is the upper-link port (8500 is KV STUDIO)",
+      "connection": { "ip": "192.168.1.60", "port": 8501 }
+    },
+    {
+      "name": "compactlogix",
+      "protocol": "RockwellEtherNetIp",
+      "enabled": false,
+      "description": "AB ControlLogix/CompactLogix; slot 0 for CompactLogix/onboard Ethernet",
+      "connection": { "ip": "192.168.1.70", "port": 44818, "slot": 0 }
+    },
+    {
+      "name": "ua-server",
+      "protocol": "OpcUa",
+      "enabled": false,
+      "description": "OPC UA server; addresses are NodeIds like ns=2;s=Tag",
+      "connection": { "endpointUrl": "opc.tcp://192.168.1.80:4840", "useSecurity": false }
+    },
+    {
+      "name": "ge-9030",
+      "protocol": "GeSrtp",
+      "enabled": false,
+      "description": "GE Series 90-30 / 90-70 / RX3i; memories R/AI/AQ (words), I/Q/M/T... (bits)",
+      "connection": { "ip": "192.168.1.90", "port": 18245 }
+    },
+    {
+      "name": "ls-xgb",
+      "protocol": "LsFEnet",
+      "enabled": false,
+      "description": "LS Electric XGB/XGK dedicated protocol; cpuInfo: XGK A0, XGB B0",
+      "connection": { "ip": "192.168.1.95", "port": 2004, "cpuInfo": "176" }
+    }
+  ],
+  "pollGroups": [
+    {
+      "name": "line1",
+      "device": "s7-main",
+      "intervalMs": 1000,
+      "points": [
+        { "name": "speed", "address": "DB1.DBD10", "valueType": "Float32" },
+        { "name": "run", "address": "M50.4", "valueType": "Bit" }
+      ]
+    }
+  ]
+}

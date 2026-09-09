@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Siemens S7 driver for IndustrialCommunication (S7-200 SMART / 300 / 400 / 1200 / 1500), built on S7netplus.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IndustrialCommunication.Core\IndustrialCommunication.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="S7netplus" Version="0.20.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="IndustrialCommunication.Tests" />
+    <InternalsVisibleTo Include="IndustrialCommunication.IntegrationTests" />
+  </ItemGroup>
+
+</Project>

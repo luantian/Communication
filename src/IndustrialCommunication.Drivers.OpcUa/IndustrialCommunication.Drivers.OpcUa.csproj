@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>OPC UA driver for IndustrialCommunication, built on the official OPCFoundation.NetStandard client stack. Addresses are NodeId strings ("ns=2;s=Tag").</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IndustrialCommunication.Core\IndustrialCommunication.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Client" Version="1.5.378.156" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="IndustrialCommunication.Tests" />
+    <InternalsVisibleTo Include="IndustrialCommunication.IntegrationTests" />
+  </ItemGroup>
+
+</Project>

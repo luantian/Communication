@@ -1,0 +1,35 @@
+{
+  // Self-contained demo configuration: the only enabled device talks to the in-process
+  // Modbus TCP slave started by Program.cs. Real hardware examples: hardware.example.json.
+  "defaults": {
+    "timeoutMs": 2000,
+    "connectTimeoutMs": 2000,
+    "connectRetries": 1,
+    "retryIntervalMs": 500,
+    "autoReconnect": true,
+    "connectionMonitor": { "enabled": true, "intervalMs": 5000 }
+  },
+  "devices": [
+    {
+      "name": "demo-slave",
+      "protocol": "ModbusTcp",
+      "description": "in-process NModbus slave",
+      "connection": {
+        "ip": "127.0.0.1",
+        "port": 15020,
+        "unitId": 1
+      }
+    }
+  ],
+  "pollGroups": [
+    {
+      "name": "main",
+      "device": "demo-slave",
+      "intervalMs": 500,
+      "points": [
+        { "name": "count", "address": "HR50", "valueType": "UInt16" },
+        { "name": "tank", "address": "HR60", "valueType": "Int16" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Omron FINS/TCP driver (CP / CJ / CJ2 / NJ series) for IndustrialCommunication. Frames implemented in-library.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IndustrialCommunication.Core\IndustrialCommunication.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="IndustrialCommunication.Tests" />
+    <InternalsVisibleTo Include="IndustrialCommunication.IntegrationTests" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <Description>Demo console app for IndustrialCommunication: loads a JSON config, spins up an in-process Modbus slave and runs read/write samples.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Modbus\IndustrialCommunication.Drivers.Modbus.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Siemens\IndustrialCommunication.Drivers.Siemens.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Mitsubishi\IndustrialCommunication.Drivers.Mitsubishi.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Omron\IndustrialCommunication.Drivers.Omron.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Panasonic\IndustrialCommunication.Drivers.Panasonic.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Keyence\IndustrialCommunication.Drivers.Keyence.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.Rockwell\IndustrialCommunication.Drivers.Rockwell.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.OpcUa\IndustrialCommunication.Drivers.OpcUa.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.GeSrtp\IndustrialCommunication.Drivers.GeSrtp.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Drivers.LsFEnet\IndustrialCommunication.Drivers.LsFEnet.csproj" />
+    <ProjectReference Include="..\..\src\IndustrialCommunication.Mqtt\IndustrialCommunication.Mqtt.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="configs\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

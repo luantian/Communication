@@ -1,0 +1,136 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Core", "src\IndustrialCommunication.Core\IndustrialCommunication.Core.csproj", "{F1FC7FAC-95B6-4202-A1A2-36F1A7A3F285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Modbus", "src\IndustrialCommunication.Drivers.Modbus\IndustrialCommunication.Drivers.Modbus.csproj", "{5FD04087-676D-4029-B171-0909F5FCE7F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Siemens", "src\IndustrialCommunication.Drivers.Siemens\IndustrialCommunication.Drivers.Siemens.csproj", "{5D423672-2AFE-45EC-BFE9-A3DE5EB5F10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Mitsubishi", "src\IndustrialCommunication.Drivers.Mitsubishi\IndustrialCommunication.Drivers.Mitsubishi.csproj", "{915CBD71-B26C-4145-83C3-1E0E7F74A128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Omron", "src\IndustrialCommunication.Drivers.Omron\IndustrialCommunication.Drivers.Omron.csproj", "{12766C17-E056-4669-8F52-F33DCEF736AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{CF9C4882-1CBC-4349-80B9-82B334B5113C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Demo", "samples\IndustrialCommunication.Demo\IndustrialCommunication.Demo.csproj", "{4317676E-26A8-4192-B34A-8C3B1F00919D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5E9A6848-0D94-4C1D-8738-A2639BA2BB7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Tests", "tests\IndustrialCommunication.Tests\IndustrialCommunication.Tests.csproj", "{C6444C50-3338-43A1-8CCA-69AC7D48F68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.IntegrationTests", "tests\IndustrialCommunication.IntegrationTests\IndustrialCommunication.IntegrationTests.csproj", "{E956703B-DA31-4A60-8310-94A64FAAFB1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.DependencyInjection", "src\IndustrialCommunication.DependencyInjection\IndustrialCommunication.DependencyInjection.csproj", "{A6522A43-BCF4-4977-860C-C297D04D6FDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Panasonic", "src\IndustrialCommunication.Drivers.Panasonic\IndustrialCommunication.Drivers.Panasonic.csproj", "{F3B38882-59D9-4490-90CA-24D8A119E81E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Keyence", "src\IndustrialCommunication.Drivers.Keyence\IndustrialCommunication.Drivers.Keyence.csproj", "{1FC193A9-EC47-4720-9FA1-C7756F62124C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.Rockwell", "src\IndustrialCommunication.Drivers.Rockwell\IndustrialCommunication.Drivers.Rockwell.csproj", "{CE5436D9-DB9C-421F-A066-D767840BFA7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.OpcUa", "src\IndustrialCommunication.Drivers.OpcUa\IndustrialCommunication.Drivers.OpcUa.csproj", "{3A5B4DF7-4020-4E45-964D-D74F4E2EA99D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Mqtt", "src\IndustrialCommunication.Mqtt\IndustrialCommunication.Mqtt.csproj", "{9B0B4C27-7005-488F-8DE0-5FC8714CD62C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.GeSrtp", "src\IndustrialCommunication.Drivers.GeSrtp\IndustrialCommunication.Drivers.GeSrtp.csproj", "{453DCA90-F6B2-451C-A323-D2EBD39B5442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialCommunication.Drivers.LsFEnet", "src\IndustrialCommunication.Drivers.LsFEnet\IndustrialCommunication.Drivers.LsFEnet.csproj", "{C46B6CD6-F371-4142-BDBF-9C4052C01EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1FC7FAC-95B6-4202-A1A2-36F1A7A3F285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FC7FAC-95B6-4202-A1A2-36F1A7A3F285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC7FAC-95B6-4202-A1A2-36F1A7A3F285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FC7FAC-95B6-4202-A1A2-36F1A7A3F285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD04087-676D-4029-B171-0909F5FCE7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD04087-676D-4029-B171-0909F5FCE7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD04087-676D-4029-B171-0909F5FCE7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD04087-676D-4029-B171-0909F5FCE7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D423672-2AFE-45EC-BFE9-A3DE5EB5F10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D423672-2AFE-45EC-BFE9-A3DE5EB5F10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D423672-2AFE-45EC-BFE9-A3DE5EB5F10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D423672-2AFE-45EC-BFE9-A3DE5EB5F10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{915CBD71-B26C-4145-83C3-1E0E7F74A128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915CBD71-B26C-4145-83C3-1E0E7F74A128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915CBD71-B26C-4145-83C3-1E0E7F74A128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915CBD71-B26C-4145-83C3-1E0E7F74A128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12766C17-E056-4669-8F52-F33DCEF736AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12766C17-E056-4669-8F52-F33DCEF736AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12766C17-E056-4669-8F52-F33DCEF736AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12766C17-E056-4669-8F52-F33DCEF736AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4317676E-26A8-4192-B34A-8C3B1F00919D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4317676E-26A8-4192-B34A-8C3B1F00919D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4317676E-26A8-4192-B34A-8C3B1F00919D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4317676E-26A8-4192-B34A-8C3B1F00919D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6444C50-3338-43A1-8CCA-69AC7D48F68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6444C50-3338-43A1-8CCA-69AC7D48F68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6444C50-3338-43A1-8CCA-69AC7D48F68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6444C50-3338-43A1-8CCA-69AC7D48F68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E956703B-DA31-4A60-8310-94A64FAAFB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E956703B-DA31-4A60-8310-94A64FAAFB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E956703B-DA31-4A60-8310-94A64FAAFB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E956703B-DA31-4A60-8310-94A64FAAFB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6522A43-BCF4-4977-860C-C297D04D6FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6522A43-BCF4-4977-860C-C297D04D6FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6522A43-BCF4-4977-860C-C297D04D6FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6522A43-BCF4-4977-860C-C297D04D6FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B38882-59D9-4490-90CA-24D8A119E81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B38882-59D9-4490-90CA-24D8A119E81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B38882-59D9-4490-90CA-24D8A119E81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B38882-59D9-4490-90CA-24D8A119E81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC193A9-EC47-4720-9FA1-C7756F62124C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC193A9-EC47-4720-9FA1-C7756F62124C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC193A9-EC47-4720-9FA1-C7756F62124C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC193A9-EC47-4720-9FA1-C7756F62124C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5436D9-DB9C-421F-A066-D767840BFA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5436D9-DB9C-421F-A066-D767840BFA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5436D9-DB9C-421F-A066-D767840BFA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5436D9-DB9C-421F-A066-D767840BFA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A5B4DF7-4020-4E45-964D-D74F4E2EA99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5B4DF7-4020-4E45-964D-D74F4E2EA99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5B4DF7-4020-4E45-964D-D74F4E2EA99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5B4DF7-4020-4E45-964D-D74F4E2EA99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0B4C27-7005-488F-8DE0-5FC8714CD62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0B4C27-7005-488F-8DE0-5FC8714CD62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0B4C27-7005-488F-8DE0-5FC8714CD62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0B4C27-7005-488F-8DE0-5FC8714CD62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453DCA90-F6B2-451C-A323-D2EBD39B5442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453DCA90-F6B2-451C-A323-D2EBD39B5442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453DCA90-F6B2-451C-A323-D2EBD39B5442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453DCA90-F6B2-451C-A323-D2EBD39B5442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46B6CD6-F371-4142-BDBF-9C4052C01EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46B6CD6-F371-4142-BDBF-9C4052C01EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46B6CD6-F371-4142-BDBF-9C4052C01EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46B6CD6-F371-4142-BDBF-9C4052C01EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1FC7FAC-95B6-4202-A1A2-36F1A7A3F285} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{5FD04087-676D-4029-B171-0909F5FCE7F1} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{5D423672-2AFE-45EC-BFE9-A3DE5EB5F10E} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{915CBD71-B26C-4145-83C3-1E0E7F74A128} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{12766C17-E056-4669-8F52-F33DCEF736AB} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{4317676E-26A8-4192-B34A-8C3B1F00919D} = {CF9C4882-1CBC-4349-80B9-82B334B5113C}
+		{C6444C50-3338-43A1-8CCA-69AC7D48F68E} = {5E9A6848-0D94-4C1D-8738-A2639BA2BB7B}
+		{E956703B-DA31-4A60-8310-94A64FAAFB1C} = {5E9A6848-0D94-4C1D-8738-A2639BA2BB7B}
+		{A6522A43-BCF4-4977-860C-C297D04D6FDD} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{F3B38882-59D9-4490-90CA-24D8A119E81E} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{1FC193A9-EC47-4720-9FA1-C7756F62124C} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{CE5436D9-DB9C-421F-A066-D767840BFA7A} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{3A5B4DF7-4020-4E45-964D-D74F4E2EA99D} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{9B0B4C27-7005-488F-8DE0-5FC8714CD62C} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{453DCA90-F6B2-451C-A323-D2EBD39B5442} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+		{C46B6CD6-F371-4142-BDBF-9C4052C01EBA} = {ED710A3F-1BE3-40DB-BBDA-7B9BA392A52D}
+	EndGlobalSection
+EndGlobal

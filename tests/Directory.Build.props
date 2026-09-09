@@ -1,0 +1,10 @@
+<Project>
+  <!-- Re-apply the repository-wide settings, then relax naming rules for test projects. -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))" />
+
+  <PropertyGroup>
+    <!-- CA1707: snake_case test method names are the xUnit convention.
+         CA1861: inline arrays in InlineData / Assert.Equal are idiomatic in protocol tests. -->
+    <NoWarn>$(NoWarn);CA1707;CA1861</NoWarn>
+  </PropertyGroup>
+</Project>

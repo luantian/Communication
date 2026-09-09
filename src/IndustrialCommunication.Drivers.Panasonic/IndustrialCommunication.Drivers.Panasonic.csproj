@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Panasonic FP series MEWTOCOL-COM driver (TCP 9094) for IndustrialCommunication. Frames implemented in-library.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IndustrialCommunication.Core\IndustrialCommunication.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="IndustrialCommunication.Tests" />
+    <InternalsVisibleTo Include="IndustrialCommunication.IntegrationTests" />
+  </ItemGroup>
+
+</Project>
